@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugas3/about_page.dart';
+import 'package:tugas3/contact.dart';
 import 'package:tugas3/home_page.dart';
 import 'package:tugas3/logout.dart';
 
@@ -48,6 +49,18 @@ class Sidemenu extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const HomePage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.person),
+            title: const Text('Kontak'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Contact(),
                 ),
               );
             },
